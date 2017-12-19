@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="4" failures="0" name="junit.FacadePersonTest" time="5.918" errors="4" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="DK"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/KH/Desktop/BearsAPI"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="netbeans.deploy" value="true"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/zm/wjc3z6zd49d4z6k42h78l8rc0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/KH/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/KH"/>
+    <property name="user.timezone" value="Europe/Copenhagen"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="KH"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dnetbeans.deploy=true -Dnetbeans.deploy.clientUrlPart=/index.html -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="da"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/KH/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="netbeans.deploy.clientUrlPart" value="/index.html"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="junit.FacadePersonTest" name="testGetPersons" time="3.475">
+    <error message="Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])" type="javax.persistence.RollbackException">javax.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:159)
+	at facade.FacadePerson.addPerson(FacadePerson.java:121)
+	at junit.FacadePersonTest.setUp(FacadePersonTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:340)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:684)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:560)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2062)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:309)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:260)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:246)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:395)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:165)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:180)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:489)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:80)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:90)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:301)
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:58)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:911)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:810)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:108)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:85)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:2899)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1863)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1845)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1796)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:227)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:126)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4279)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1444)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1534)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:278)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1172)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:134)
+	... 34 more
+Caused by: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement42.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.jdbc.Driver42.newEmbedPreparedStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.prepareStatement(DatabaseAccessor.java:1565)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.prepareStatement(DatabaseAccessor.java:1514)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseCall.prepareStatement(DatabaseCall.java:785)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:621)
+	... 63 more
+Caused by: ERROR 42X14: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ResultColumn.bindResultColumnByName(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ResultColumnList.bindResultColumnsByName(Unknown Source)
+	at org.apache.derby.impl.sql.compile.InsertNode.bindStatement(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
+	... 72 more
+</error>
+    <system-out>SetUp
+[EL Info]: 2017-09-13 23:10:24.98--ServerSession(817348612)--EclipseLink, version: Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd
+[EL Info]: connection: 2017-09-13 23:10:26.184--ServerSession(817348612)--/file:/Users/KH/Desktop/BearsAPI/target/classes/_PU_DERBY login successful
+[EL Warning]: 2017-09-13 23:10:27.002--ServerSession(817348612)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Table/View &apos;INFOENTITY&apos; already exists in Schema &apos;APP&apos;.
+Error Code: 30000
+Call: CREATE TABLE INFOENTITY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DTYPE VARCHAR(31), EMAIL VARCHAR(255), ADDRESS_ID INTEGER, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), IEP_ID INTEGER, NUMEMPLOYEES INTEGER, CVR INTEGER, DESCRIPTION VARCHAR(255), MARKETVALUE FLOAT, NAME VARCHAR(255), IEC_ID INTEGER, PRIMARY KEY (ID))
+Query: DataModifyQuery(sql=&quot;CREATE TABLE INFOENTITY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DTYPE VARCHAR(31), EMAIL VARCHAR(255), ADDRESS_ID INTEGER, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), IEP_ID INTEGER, NUMEMPLOYEES INTEGER, CVR INTEGER, DESCRIPTION VARCHAR(255), MARKETVALUE FLOAT, NAME VARCHAR(255), IEC_ID INTEGER, PRIMARY KEY (ID))&quot;)
+[EL Warning]: 2017-09-13 23:10:27.061--ServerSession(817348612)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Table/View &apos;HOBBY&apos; already exists in Schema &apos;APP&apos;.
+Error Code: 30000
+Call: CREATE TABLE HOBBY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRIMARY KEY (ID))
+Query: DataModifyQuery(sql=&quot;CREATE TABLE HOBBY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRIMARY KEY (ID))&quot;)
+[EL Warning]: 2017-09-13 23:10:27.127--ServerSession(817348612)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;IEP_ID&apos; is not a column in table or VTI &apos;INFOENTITY&apos;.
+Error Code: 30000
+Call: ALTER TABLE INFOENTITY ADD CONSTRAINT INFOENTITY_IEP_ID FOREIGN KEY (IEP_ID) REFERENCES INFOENTITY (ID)
+Query: DataModifyQuery(sql=&quot;ALTER TABLE INFOENTITY ADD CONSTRAINT INFOENTITY_IEP_ID FOREIGN KEY (IEP_ID) REFERENCES INFOENTITY (ID)&quot;)
+[EL Warning]: 2017-09-13 23:10:27.528--UnitOfWork(140404585)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+TearDown
+[EL Info]: connection: 2017-09-13 23:10:27.533--ServerSession(817348612)--/file:/Users/KH/Desktop/BearsAPI/target/classes/_PU_DERBY logout successful
+</system-out>
+  </testcase>
+  <testcase classname="junit.FacadePersonTest" name="testDeletePerson" time="0.879">
+    <error message="Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])" type="javax.persistence.RollbackException">javax.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:159)
+	at facade.FacadePerson.addPerson(FacadePerson.java:121)
+	at junit.FacadePersonTest.setUp(FacadePersonTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:340)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:684)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:560)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2062)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:309)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:260)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:246)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:395)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:165)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:180)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:489)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:80)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:90)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:301)
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:58)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:911)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:810)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:108)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:85)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:2899)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1863)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1845)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1796)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:227)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:126)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4279)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1444)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1534)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:278)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1172)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:134)
+	... 34 more
+Caused by: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement42.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.jdbc.Driver42.newEmbedPreparedStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.prepareStatement(DatabaseAccessor.java:1565)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.prepareStatement(DatabaseAccessor.java:1514)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseCall.prepareStatement(DatabaseCall.java:785)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:621)
+	... 63 more
+Caused by: ERROR 42X14: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ResultColumn.bindResultColumnByName(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ResultColumnList.bindResultColumnsByName(Unknown Source)
+	at org.apache.derby.impl.sql.compile.InsertNode.bindStatement(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
+	... 72 more
+</error>
+    <system-out>SetUp
+[EL Info]: 2017-09-13 23:10:27.82--ServerSession(1659286984)--EclipseLink, version: Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd
+[EL Info]: connection: 2017-09-13 23:10:27.837--ServerSession(1659286984)--/file:/Users/KH/Desktop/BearsAPI/target/classes/_PU_DERBY login successful
+[EL Warning]: 2017-09-13 23:10:28.315--ServerSession(1659286984)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Table/View &apos;INFOENTITY&apos; already exists in Schema &apos;APP&apos;.
+Error Code: 30000
+Call: CREATE TABLE INFOENTITY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DTYPE VARCHAR(31), EMAIL VARCHAR(255), ADDRESS_ID INTEGER, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), IEP_ID INTEGER, NUMEMPLOYEES INTEGER, CVR INTEGER, DESCRIPTION VARCHAR(255), MARKETVALUE FLOAT, NAME VARCHAR(255), IEC_ID INTEGER, PRIMARY KEY (ID))
+Query: DataModifyQuery(sql=&quot;CREATE TABLE INFOENTITY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DTYPE VARCHAR(31), EMAIL VARCHAR(255), ADDRESS_ID INTEGER, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), IEP_ID INTEGER, NUMEMPLOYEES INTEGER, CVR INTEGER, DESCRIPTION VARCHAR(255), MARKETVALUE FLOAT, NAME VARCHAR(255), IEC_ID INTEGER, PRIMARY KEY (ID))&quot;)
+[EL Warning]: 2017-09-13 23:10:28.355--ServerSession(1659286984)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Table/View &apos;HOBBY&apos; already exists in Schema &apos;APP&apos;.
+Error Code: 30000
+Call: CREATE TABLE HOBBY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRIMARY KEY (ID))
+Query: DataModifyQuery(sql=&quot;CREATE TABLE HOBBY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRIMARY KEY (ID))&quot;)
+[EL Warning]: 2017-09-13 23:10:28.395--ServerSession(1659286984)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;IEP_ID&apos; is not a column in table or VTI &apos;INFOENTITY&apos;.
+Error Code: 30000
+Call: ALTER TABLE INFOENTITY ADD CONSTRAINT INFOENTITY_IEP_ID FOREIGN KEY (IEP_ID) REFERENCES INFOENTITY (ID)
+Query: DataModifyQuery(sql=&quot;ALTER TABLE INFOENTITY ADD CONSTRAINT INFOENTITY_IEP_ID FOREIGN KEY (IEP_ID) REFERENCES INFOENTITY (ID)&quot;)
+[EL Warning]: 2017-09-13 23:10:28.482--UnitOfWork(100445376)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+TearDown
+[EL Info]: connection: 2017-09-13 23:10:28.483--ServerSession(1659286984)--/file:/Users/KH/Desktop/BearsAPI/target/classes/_PU_DERBY logout successful
+</system-out>
+  </testcase>
+  <testcase classname="junit.FacadePersonTest" name="testAddPerson" time="0.717">
+    <error message="Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])" type="javax.persistence.RollbackException">javax.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:159)
+	at facade.FacadePerson.addPerson(FacadePerson.java:121)
+	at junit.FacadePersonTest.setUp(FacadePersonTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:340)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:684)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:560)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2062)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:309)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:260)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:246)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:395)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:165)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:180)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:489)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:80)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:90)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:301)
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:58)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:911)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:810)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:108)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:85)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:2899)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1863)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1845)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1796)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:227)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:126)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4279)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1444)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1534)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:278)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1172)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:134)
+	... 34 more
+Caused by: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement42.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.jdbc.Driver42.newEmbedPreparedStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.prepareStatement(DatabaseAccessor.java:1565)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.prepareStatement(DatabaseAccessor.java:1514)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseCall.prepareStatement(DatabaseCall.java:785)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:621)
+	... 63 more
+Caused by: ERROR 42X14: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ResultColumn.bindResultColumnByName(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ResultColumnList.bindResultColumnsByName(Unknown Source)
+	at org.apache.derby.impl.sql.compile.InsertNode.bindStatement(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
+	... 72 more
+</error>
+    <system-out>SetUp
+[EL Info]: 2017-09-13 23:10:28.635--ServerSession(207988207)--EclipseLink, version: Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd
+[EL Info]: connection: 2017-09-13 23:10:28.659--ServerSession(207988207)--/file:/Users/KH/Desktop/BearsAPI/target/classes/_PU_DERBY login successful
+[EL Warning]: 2017-09-13 23:10:28.916--ServerSession(207988207)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Table/View &apos;INFOENTITY&apos; already exists in Schema &apos;APP&apos;.
+Error Code: 30000
+Call: CREATE TABLE INFOENTITY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DTYPE VARCHAR(31), EMAIL VARCHAR(255), ADDRESS_ID INTEGER, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), IEP_ID INTEGER, NUMEMPLOYEES INTEGER, CVR INTEGER, DESCRIPTION VARCHAR(255), MARKETVALUE FLOAT, NAME VARCHAR(255), IEC_ID INTEGER, PRIMARY KEY (ID))
+Query: DataModifyQuery(sql=&quot;CREATE TABLE INFOENTITY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DTYPE VARCHAR(31), EMAIL VARCHAR(255), ADDRESS_ID INTEGER, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), IEP_ID INTEGER, NUMEMPLOYEES INTEGER, CVR INTEGER, DESCRIPTION VARCHAR(255), MARKETVALUE FLOAT, NAME VARCHAR(255), IEC_ID INTEGER, PRIMARY KEY (ID))&quot;)
+[EL Warning]: 2017-09-13 23:10:28.953--ServerSession(207988207)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Table/View &apos;HOBBY&apos; already exists in Schema &apos;APP&apos;.
+Error Code: 30000
+Call: CREATE TABLE HOBBY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRIMARY KEY (ID))
+Query: DataModifyQuery(sql=&quot;CREATE TABLE HOBBY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRIMARY KEY (ID))&quot;)
+[EL Warning]: 2017-09-13 23:10:28.995--ServerSession(207988207)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;IEP_ID&apos; is not a column in table or VTI &apos;INFOENTITY&apos;.
+Error Code: 30000
+Call: ALTER TABLE INFOENTITY ADD CONSTRAINT INFOENTITY_IEP_ID FOREIGN KEY (IEP_ID) REFERENCES INFOENTITY (ID)
+Query: DataModifyQuery(sql=&quot;ALTER TABLE INFOENTITY ADD CONSTRAINT INFOENTITY_IEP_ID FOREIGN KEY (IEP_ID) REFERENCES INFOENTITY (ID)&quot;)
+[EL Warning]: 2017-09-13 23:10:29.149--UnitOfWork(317960117)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+TearDown
+[EL Info]: connection: 2017-09-13 23:10:29.155--ServerSession(207988207)--/file:/Users/KH/Desktop/BearsAPI/target/classes/_PU_DERBY logout successful
+</system-out>
+  </testcase>
+  <testcase classname="junit.FacadePersonTest" name="testGetPerson" time="0.735">
+    <error message="Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])" type="javax.persistence.RollbackException">javax.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:159)
+	at facade.FacadePerson.addPerson(FacadePerson.java:121)
+	at junit.FacadePersonTest.setUp(FacadePersonTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:340)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:684)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:560)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2062)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:309)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:260)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:246)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:395)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:165)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:180)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:489)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:80)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:90)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:301)
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:58)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:911)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:810)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:108)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:85)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:2899)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1863)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1845)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1796)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:227)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:126)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4279)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1444)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1534)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:278)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1172)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:134)
+	... 34 more
+Caused by: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement42.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.jdbc.Driver42.newEmbedPreparedStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.prepareStatement(DatabaseAccessor.java:1565)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.prepareStatement(DatabaseAccessor.java:1514)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseCall.prepareStatement(DatabaseCall.java:785)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:621)
+	... 63 more
+Caused by: ERROR 42X14: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ResultColumn.bindResultColumnByName(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ResultColumnList.bindResultColumnsByName(Unknown Source)
+	at org.apache.derby.impl.sql.compile.InsertNode.bindStatement(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
+	... 72 more
+</error>
+    <system-out>SetUp
+[EL Info]: 2017-09-13 23:10:29.46--ServerSession(1371400311)--EclipseLink, version: Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd
+[EL Info]: connection: 2017-09-13 23:10:29.47--ServerSession(1371400311)--/file:/Users/KH/Desktop/BearsAPI/target/classes/_PU_DERBY login successful
+[EL Warning]: 2017-09-13 23:10:29.721--ServerSession(1371400311)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Table/View &apos;INFOENTITY&apos; already exists in Schema &apos;APP&apos;.
+Error Code: 30000
+Call: CREATE TABLE INFOENTITY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DTYPE VARCHAR(31), EMAIL VARCHAR(255), ADDRESS_ID INTEGER, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), IEP_ID INTEGER, NUMEMPLOYEES INTEGER, CVR INTEGER, DESCRIPTION VARCHAR(255), MARKETVALUE FLOAT, NAME VARCHAR(255), IEC_ID INTEGER, PRIMARY KEY (ID))
+Query: DataModifyQuery(sql=&quot;CREATE TABLE INFOENTITY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DTYPE VARCHAR(31), EMAIL VARCHAR(255), ADDRESS_ID INTEGER, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), IEP_ID INTEGER, NUMEMPLOYEES INTEGER, CVR INTEGER, DESCRIPTION VARCHAR(255), MARKETVALUE FLOAT, NAME VARCHAR(255), IEC_ID INTEGER, PRIMARY KEY (ID))&quot;)
+[EL Warning]: 2017-09-13 23:10:29.753--ServerSession(1371400311)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Table/View &apos;HOBBY&apos; already exists in Schema &apos;APP&apos;.
+Error Code: 30000
+Call: CREATE TABLE HOBBY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRIMARY KEY (ID))
+Query: DataModifyQuery(sql=&quot;CREATE TABLE HOBBY (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DESCRIPTION VARCHAR(255), NAME VARCHAR(255), PRIMARY KEY (ID))&quot;)
+[EL Warning]: 2017-09-13 23:10:29.844--ServerSession(1371400311)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;IEP_ID&apos; is not a column in table or VTI &apos;INFOENTITY&apos;.
+Error Code: 30000
+Call: ALTER TABLE INFOENTITY ADD CONSTRAINT INFOENTITY_IEP_ID FOREIGN KEY (IEP_ID) REFERENCES INFOENTITY (ID)
+Query: DataModifyQuery(sql=&quot;ALTER TABLE INFOENTITY ADD CONSTRAINT INFOENTITY_IEP_ID FOREIGN KEY (IEP_ID) REFERENCES INFOENTITY (ID)&quot;)
+[EL Warning]: 2017-09-13 23:10:29.917--UnitOfWork(1643299824)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.5.v20170607-b3d05bd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: &apos;FIRSTNAME&apos; is not a column in table or VTI &apos;APP.INFOENTITY&apos;.
+Error Code: 20000
+Call: INSERT INTO INFOENTITY (EMAIL, FIRSTNAME, LASTNAME, ADDRESS_ID, IEP_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [6 parameters bound]
+Query: InsertObjectQuery(entity.Person[ id=0 ])
+TearDown
+[EL Info]: connection: 2017-09-13 23:10:29.921--ServerSession(1371400311)--/file:/Users/KH/Desktop/BearsAPI/target/classes/_PU_DERBY logout successful
+</system-out>
+  </testcase>
+</testsuite>
