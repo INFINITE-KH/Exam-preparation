@@ -1,8 +1,15 @@
 1. Explain the rationale behind the topic Object Relational Mapping and the Pros and Cons in using a ORM.
-  - 
+    - Fordelene ved at bruge object relational mapping er essentielt at database logik i form af sql scripts, sql statements osv.
+      er håndteret igennem programmering. Altså laver man blot sine objekter, og ens ORM framework håndtere så databaseskrivning
+      osv. 
+      Der er dog også ulemper ved at benytte ORM. Eksempelvis er håndteringen af normalisering ikke fjernet, den er blot ændret
+      til at skulle håndteres programatisk. Dette går tit glemt hos udviklere, og databasestrukturen kan derfor ende med at være
+      værre, end hvis man ikke benyttede ORM. 
   
 2. Discuss how we usually have queried a relational database
-  -
+    - Det gøres normalt ved at benytte JDBC driver til at connecte til en database, hvorefter man skriver sine queries i nogle metoder
+      som SQL statements.
 
 3. Discuss the methods we can use to query a JPA design and compare with what you explained above
-  -
+    - I JPA kan man query igennem sin EntityManager, hvortil en række queries allerede er definerede ud fra ens entities.
+      Man kan dog også bruge raw queries, som er queries hvortil man selv skriver statementet der skal køres på databasen.
